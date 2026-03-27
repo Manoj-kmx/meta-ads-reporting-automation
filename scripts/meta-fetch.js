@@ -20,6 +20,7 @@ function fetchMetaAdsInsights() {
   }
 
   // 🔐 Secure token (DO NOT hardcode)
+  getProperty("META_ACCESS_TOKEN")
   var accessToken = PropertiesService.getScriptProperties().getProperty("META_ACCESS_TOKEN");
 
   var baseURL = "https://graph.facebook.com/v22.0/act_YOUR_AD_ACCOUNT_ID/insights";
